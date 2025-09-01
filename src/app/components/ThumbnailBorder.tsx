@@ -1,13 +1,15 @@
 "use client";
 
-import React, { useRef, useLayoutEffect, useState } from "react";
+import React from "react";
 
 export const ThumbnailBorder = ({ thumbnail }: { thumbnail: string }) => {
 
-    const textRef = useRef<SVGTextElement>(null);
-    const [offset, setOffset] = useState(0);
+    const thumbnailDisplay = React.useMemo(() => thumbnail.toUpperCase(), [thumbnail]);
 
-    useLayoutEffect(() => {
+    const textRef = React.useRef<SVGTextElement>(null);
+    const [offset, setOffset] = React.useState(0);
+
+    React.useLayoutEffect(() => {
         if (textRef.current) {
             const bbox = textRef.current.getBBox();
             setOffset(bbox.width);
@@ -20,7 +22,7 @@ export const ThumbnailBorder = ({ thumbnail }: { thumbnail: string }) => {
             < svg width="0" height="0" style={{ position: "absolute" }
             }>
                 <text ref={textRef} fontSize="24" fontWeight="bold">
-                    {thumbnail}
+                    {thumbnailDisplay}
                 </text>
             </svg >
             <svg
@@ -36,12 +38,12 @@ export const ThumbnailBorder = ({ thumbnail }: { thumbnail: string }) => {
                 {/* First instance, larger font */}
                 <text fontSize="24" fill="#1e1b4b" fontWeight="bold">
                     <textPath href="#border-square">
-                        {thumbnail}
+                        {thumbnailDisplay}
                     </textPath>
                 </text>
                 {/* Remaining instances, normal font */}
                 <text fontSize="14" fill="#1e1b4b" opacity="0.5" fontWeight="bold">
-                    <textPath href="#border-square" startOffset={offset + 5}>
+                    <textPath href="#border-square" startOffset={offset + 10}>
                         {Array(99).fill(thumbnail).join("  ")}
                     </textPath>
                 </text>

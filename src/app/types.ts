@@ -5,6 +5,7 @@ export type Root = {
 
 export type Branch = {
     title: string;
+    description: string;
     children: Array<TreeNode>;
     style: React.CSSProperties;
 }
