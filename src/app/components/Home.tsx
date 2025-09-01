@@ -6,15 +6,14 @@ import { tree } from "../tree-content";
 import { useRouter, useParams } from "next/navigation";
 import { findNodeAndThumbnailsFromParams } from "../utils";
 import { isLeaf, } from "../types";
-import { ThumbnailBorder } from "../components/ThumbnailBorder";
-
-const maxThumbnailSize = 670;
+import { THUMBNAIL_PADDING_PX, THUMBNAIL_SIZE_PX, ThumbnailBorder } from "../components/ThumbnailBorder";
 
 export default function Home() {
     const router = useRouter();
     const params = useParams();
 
     const [node, thumbnails] = React.useMemo(() => findNodeAndThumbnailsFromParams(tree, params), [params]);
+    const thumbnailOffsetPx = React.useMemo(() => thumbnails.length * THUMBNAIL_SIZE_PX + THUMBNAIL_PADDING_PX, [thumbnails.length]);
 
     // Redirect to home if node not found
     React.useEffect(() => {
@@ -30,10 +29,10 @@ export default function Home() {
     return (
         <>
             {thumbnails.map((thumbnail, i) => (
-                <ThumbnailBorder key={`thumbnail-${thumbnail.slug}`} thumbnail={thumbnail} size={maxThumbnailSize - (i * 70)} />
+                <ThumbnailBorder key={`thumbnail-${thumbnail.slug}`} thumbnail={thumbnail} thumbnailIndex={i} />
             ))}
             {
-                isLeaf(node) ? node.page : <TreeGrid rootOrBranch={node} />
+                isLeaf(node) ? node.page : <TreeGrid rootOrBranch={node} thumbnailOffsetPx={thumbnailOffsetPx} />
             }
         </>
     )
