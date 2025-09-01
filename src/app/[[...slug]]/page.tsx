@@ -6,7 +6,7 @@ import Home from "../components/Home";
 // Generate static params for dynamic routes in order to allow export of the app. 
 export function generateStaticParams() {
   const params: { slug?: string[] }[] = [];
-  params.push({ slug: [''] }); // for the root path
+  params.push({ slug: [] }); // for the root path
 
   // Recurse through the tree to get an array of all viable paths.
   const getSlugsForNode = (node: Branch | Leaf): string[][] => {

@@ -33,5 +33,5 @@ export const isLeaf = (node: TreeNode): node is Leaf => {
 
 export type Thumbnail = {
     title: string;
-    slug: string;
+    slug: string[];
 }

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
 import "./globals.css";
+import { ThumbnailsProvider } from "./ThumbnailsContext";
 
 const lora = Montserrat({
   subsets: ["latin"],
@@ -21,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={lora.className}>
       <body>
-        {children}
+        <ThumbnailsProvider>{children}</ThumbnailsProvider>
       </body>
     </html>
   );
