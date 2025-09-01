@@ -1,28 +1,24 @@
 "use client";
 
-import React, { useRef, useLayoutEffect, useState } from "react";
-import { TreeNode } from "../types";
+import React from "react";
+import { Branch, Root } from "../types";
 import { GridNode } from "./TreeNode";
-import { ThumbnailBorder } from "./ThumbnailBorder";
 
-export const TreeGrid = ({ title, nodes }: { title: string, nodes: TreeNode[] }) => {
+export const TreeGrid = ({ rootOrBranch }: { rootOrBranch: Root | Branch }) => {
     const gridDimension = React.useMemo(() => {
-        const count = nodes.length;
+        const count = Object.keys(rootOrBranch.children).length;
         const dimension = Math.ceil(Math.sqrt(count));
         return dimension;
-    }, [nodes]);
+    }, [Object.keys(rootOrBranch.children).length]);
 
     return (
-        <>
-            <ThumbnailBorder thumbnail={title} />
-            <div className="flex flex-col items-center justify-center min-h-screen">
-                <div className="grid gap-4 aspect-square h-150 w-150 p-8" style={{
-                    gridTemplateColumns: `repeat(${gridDimension}, 1fr)`,
-                    gridTemplateRows: `repeat(${gridDimension}, 1fr)`
-                }}>
-                    {nodes.map(node => <GridNode key={node.title} node={node} />)}
-                </div>
+        <div className="flex flex-col items-center justify-center min-h-screen">
+            <div className="grid gap-4 aspect-square h-150 w-150 p-8" style={{
+                gridTemplateColumns: `repeat(${gridDimension}, 1fr)`,
+                gridTemplateRows: `repeat(${gridDimension}, 1fr)`
+            }}>
+                {Object.values(rootOrBranch.children).map(node => <GridNode key={node.title} node={node} />)}
             </div>
-        </>
+        </div>
     );
 }

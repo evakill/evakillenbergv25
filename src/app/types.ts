@@ -1,27 +1,33 @@
+import { JSX } from "react";
+
 export type Root = {
     title: string;
-    children: Array<TreeNode>;
+    children: Record<string, Branch | Leaf>;
 }
 
 export type Branch = {
+    key: string;
     title: string;
     description: string;
-    children: Array<TreeNode>;
+    children: Record<string, Branch | Leaf>;
     style: React.CSSProperties;
 }
 
 export type Leaf = {
+    key: string;
     title: string;
-    content: string;
+    content: JSX.Element;
+    page: JSX.Element;
 }
 
-export type TreeNode = Branch | Leaf;
+export type TreeNode = Root | Branch | Leaf;
 
 
 export const isBranch = (node: TreeNode): node is Branch => {
-    return Object.prototype.hasOwnProperty.call(node, 'children');
+    return 'children' in node && 'key' in node;
 }
 
 export const isLeaf = (node: TreeNode): node is Leaf => {
-    return Object.prototype.hasOwnProperty.call(node, 'content')
+    return 'content' in node;
 }
+
