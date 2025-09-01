@@ -2,8 +2,8 @@
 
 :root {
   /* sky-100 */
-  --background: #e0e7ff;
-  --foreground: #1e1b4b;
+  --background: #391f0c 30%;
+  --foreground: #ad815e;
 }
 
 @theme inline {

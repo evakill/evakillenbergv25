@@ -75,12 +75,12 @@ export const ThumbnailBorder = React.memo(function ThumbnailBorder({ thumbnail, 
                     style={{ cursor: "pointer" }}
                     className={`hover:opacity-80`}
                 >
-                    <text fontSize="18" fill="#1e1b4b" fontWeight="bold" >
+                    <text fontSize="18" fill="#ad815e" fontWeight="bold" >
                         <textPath href={`#border-square-${pathname}`} startOffset={10}>
                             {thumbnailDisplay} /
                         </textPath>
                     </text>
-                    <text fontSize="12" fill="#1e1b4b" opacity="0.5" fontWeight="bold">
+                    <text fontSize="12" fill="#ad815e" opacity="0.5" fontWeight="bold">
                         <textPath href={`#border-square-${pathname}`} startOffset={offset}>
                             {Array(TEXT_REPEAT).fill(thumbnailDisplay).join("  ")}
                         </textPath>

@@ -18,7 +18,7 @@ export const tree: Root = {
                     description: "code deployed",
                     children: {},
                     style: {
-                        backgroundColor: colors.indigo[400]
+                        backgroundColor: colors.green[400]
                     }
                 },
                 "community": {
@@ -27,12 +27,12 @@ export const tree: Root = {
                     description: "IRL",
                     children: {},
                     style: {
-                        backgroundColor: colors.indigo[600]
+                        backgroundColor: colors.green[600]
                     }
                 }
             },
             style: {
-                backgroundColor: colors.indigo[500]
+                backgroundColor: colors.green[500]
             }
         },
         "play": {
@@ -41,7 +41,7 @@ export const tree: Root = {
             description: "life-enriching activities",
             children: {},
             style: {
-                backgroundColor: colors.yellow[500]
+                backgroundColor: colors.green[600]
             }
         },
         "study": {
@@ -50,7 +50,7 @@ export const tree: Root = {
             description: "continual growth",
             children: {},
             style: {
-                backgroundColor: colors.emerald[500]
+                backgroundColor: colors.green[700]
             }
         },
         "practice": {
@@ -59,7 +59,7 @@ export const tree: Root = {
             description: "intentional repetition",
             children: {},
             style: {
-                backgroundColor: colors.rose[500]
+                backgroundColor: colors.green[400]
             }
         },
     }
