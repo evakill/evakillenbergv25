@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import { Lora } from "next/font/google";
+import { Montserrat } from "next/font/google";
 import "./globals.css";
 
-const lora = Lora({
+const lora = Montserrat({
   subsets: ["latin"],
   weight: ["400", "700"],
   display: "swap",
