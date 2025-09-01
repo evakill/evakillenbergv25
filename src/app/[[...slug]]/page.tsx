@@ -18,7 +18,7 @@ export function generateStaticParams() {
       return [[node.key]];
     }
     const childParams = childNodes.flatMap(node => getSlugsForNode(node))
-    return childParams.map(param => [node.key, ...param]);
+    return [[node.key], ...childParams.map(param => [node.key, ...param])];
   }
 
   const allSlugs = Object.values(tree.children).flatMap(node => getSlugsForNode(node));

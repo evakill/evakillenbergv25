@@ -8,6 +8,8 @@ import { findNodeAndThumbnailsFromParams } from "../utils";
 import { isLeaf, } from "../types";
 import { ThumbnailBorder } from "../components/ThumbnailBorder";
 
+const maxThumbnailSize = 670;
+
 export default function Home() {
     const router = useRouter();
     const params = useParams();
@@ -27,8 +29,8 @@ export default function Home() {
 
     return (
         <>
-            {thumbnails.map(thumbnail => (
-                <ThumbnailBorder key={thumbnail} thumbnail={thumbnail} />
+            {thumbnails.map((thumbnail, i) => (
+                <ThumbnailBorder key={`thumbnail-${thumbnail.slug}`} thumbnail={thumbnail} size={maxThumbnailSize - (i * 70)} />
             ))}
             {
                 isLeaf(node) ? node.page : <TreeGrid rootOrBranch={node} />

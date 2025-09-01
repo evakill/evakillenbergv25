@@ -4,13 +4,33 @@ import colors from 'tailwindcss/colors';
 
 export const tree: Root = {
     title: "Eva",
+    key: "",
     children: {
         "work":
         {
             key: "work",
             title: "work",
             description: "contributions to the world",
-            children: {},
+            children: {
+                "digital": {
+                    key: "digital",
+                    title: "digital",
+                    description: "code deployed",
+                    children: {},
+                    style: {
+                        backgroundColor: colors.indigo[400]
+                    }
+                },
+                "community": {
+                    key: "community",
+                    title: "community",
+                    description: "IRL",
+                    children: {},
+                    style: {
+                        backgroundColor: colors.indigo[600]
+                    }
+                }
+            },
             style: {
                 backgroundColor: colors.indigo[500]
             }

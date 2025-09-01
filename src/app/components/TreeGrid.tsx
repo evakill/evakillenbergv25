@@ -13,7 +13,7 @@ export const TreeGrid = ({ rootOrBranch }: { rootOrBranch: Root | Branch }) => {
 
     return (
         <div className="flex flex-col items-center justify-center min-h-screen">
-            <div className="grid gap-4 aspect-square h-150 w-150 p-8" style={{
+            <div className="grid gap-4 p-8" style={{
                 gridTemplateColumns: `repeat(${gridDimension}, 1fr)`,
                 gridTemplateRows: `repeat(${gridDimension}, 1fr)`
             }}>
