@@ -1,11 +1,16 @@
+export type Root = {
+    title: string;
+    children: Array<TreeNode>;
+}
+
 export type Branch = {
     title: string;
-    children: Array<Branch | Leaf>;
+    children: Array<TreeNode>;
+    style: React.CSSProperties;
 }
 
 export type Leaf = {
     title: string;
-    parent: Branch;
     content: string;
 }
 
@@ -13,7 +18,7 @@ export type TreeNode = Branch | Leaf;
 
 
 export const isBranch = (node: TreeNode): node is Branch => {
-    return Object.prototype.hasOwnProperty.call(node, 'children') && Object.prototype.hasOwnProperty.call(node, 'parent');
+    return Object.prototype.hasOwnProperty.call(node, 'children');
 }
 
 export const isLeaf = (node: TreeNode): node is Leaf => {

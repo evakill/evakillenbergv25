@@ -3,7 +3,7 @@ import { tree } from "./tree-content";
 
 export default function Home() {
   return (
-    <div> <TreeGrid title="Eva" nodes={tree.children} />
+    <div> <TreeGrid title={tree.title} nodes={tree.children} />
     </div>
   );
 }
