@@ -17,8 +17,13 @@ export type Branch = {
 export type Leaf = {
     key: string;
     title: string;
-    content: JSX.Element;
-    page: JSX.Element;
+    description?: string;
+    dates?: string;
+    img?: string;
+    links?: string[];
+    style: React.CSSProperties;
+    content?: JSX.Element;
+    page?: JSX.Element;
 }
 
 export type TreeNode = Root | Branch | Leaf;
@@ -28,7 +33,7 @@ export const isBranch = (node: TreeNode): node is Branch => {
 }
 
 export const isLeaf = (node: TreeNode): node is Leaf => {
-    return 'content' in node;
+    return !('children' in node);
 }
 
 export type Thumbnail = {
