@@ -24,7 +24,6 @@ export default function Home() {
         return null; // Optionally, show a loading spinner here
     }
 
-    return (isLeaf(node) ? node.page : <TreeGrid rootOrBranch={node} />
-    )
+    return <TreeGrid treeNode={node} />
 
 }

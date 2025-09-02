@@ -20,7 +20,7 @@ export type Leaf = {
     shortDescription?: string;
     description?: string;
     dates?: string;
-    img?: string;
+    imgPath?: string;
     links?: string[];
     style: React.CSSProperties;
     content?: JSX.Element;
