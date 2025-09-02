@@ -67,37 +67,217 @@ export const tree: Root = {
                         }
                     },
                     style: {
-                        backgroundColor: colors.green[400]
+                        backgroundColor: colors.green[600]
                     }
                 },
                 "community": {
                     key: "community",
                     title: "community",
                     description: "IRL",
-                    children: {},
+                    children: {
+                        "btu": {
+                            key: "btu",
+                            title: "Bozeman Tenants United",
+                            shortDescription: "City-wide tenant union..",
+                            description: "",
+                            style: {
+                                backgroundColor: colors.green[600]
+                            }
+                        },
+                        "fmt": {
+                            key: "fmt",
+                            title: "Forward Montana",
+                            shortDescription: "Progressive civic nonprofit...",
+                            description: "",
+                            style: {
+                                backgroundColor: colors.green[800]
+                            }
+                        },
+                        "n-church-ave": {
+                            key: "n-church-ave",
+                            title: "My Neighborhood",
+                            shortDescription: "",
+                            description: "",
+                            style: {
+                                backgroundColor: colors.green[700]
+                            }
+                        }
+                    },
                     style: {
-                        backgroundColor: colors.green[600]
+                        backgroundColor: colors.green[700]
                     }
                 }
             },
             style: {
-                backgroundColor: colors.green[500]
+                backgroundColor: colors.green[800]
             }
         },
         "play": {
             key: "play",
             title: "play",
             description: "life-enriching activities",
-            children: {},
+            children: {
+                "vanlife": {
+                    key: "vanlife",
+                    title: "Van Life",
+                    shortDescription: "Living the van life...",
+                    description: "",
+                    style: {
+                        backgroundColor: colors.green[400]
+                    }
+                },
+                "physical": {
+                    key: "physical",
+                    title: "physical",
+                    description: "",
+                    children: {
+                        "bjj": {
+                            key: "bjj",
+                            title: "Brazilian Jiu-Jitsu",
+                            description: "",
+                            style: {
+                                backgroundColor: colors.green[500]
+                            }
+                        },
+                        "surfing": {
+                            key: "surfing",
+                            title: "Surfing",
+                            description: "",
+                            style: {
+                                backgroundColor: colors.green[400]
+                            }
+                        },
+                        "skiing": {
+                            key: "skiing",
+                            title: "Skiing",
+                            description: "",
+                            style: {
+                                backgroundColor: colors.green[500]
+                            }
+                        },
+                        "century": {
+                            key: "century",
+                            title: "100-mile Bike Ride",
+                            description: "",
+                            style: {
+                                backgroundColor: colors.green[600]
+                            }
+                        }, "soccer": {
+                            key: "soccer",
+                            title: "Soccer",
+                            description: "",
+                            style: {
+                                backgroundColor: colors.green[800]
+                            }
+                        },
+                    },
+                    style: {
+                        backgroundColor: colors.green[500]
+                    }
+                }
+            },
             style: {
-                backgroundColor: colors.green[600]
+                backgroundColor: colors.green[700]
             }
         },
         "study": {
             key: "study",
             title: "study",
             description: "continual growth",
-            children: {},
+            children: {
+                "nature": {
+                    key: "nature",
+                    title: "Natural World",
+                    description: "",
+                    children: {
+                        "natural building": {
+                            key: "natural building",
+                            title: "Natural Building",
+                            description: "",
+                            style: {
+                                backgroundColor: colors.green[700]
+                            }
+                        },
+                        "gardening": {
+                            key: "gardening",
+                            title: "Gardening",
+                            description: "",
+                            style: {
+                                backgroundColor: colors.green[800]
+                            }
+                        },
+                        "rewilding": {
+                            key: "rewilding",
+                            title: "Rewilding 101",
+                            description: "",
+                            style: {
+                                backgroundColor: colors.green[500]
+                            }
+                        }
+                    },
+                    style: {
+                        backgroundColor: colors.green[600]
+                    }
+
+                },
+                "politics": {
+                    key: "politics",
+                    title: "Politics",
+                    description: "",
+                    style: {
+                        backgroundColor: colors.green[400]
+                    },
+                    children: {
+                        "utrc": {
+                            key: "utrc",
+                            title: "Utopia Together Reading Collective",
+                            description: "",
+                            style: {
+                                backgroundColor: colors.green[600]
+                            }
+                        },
+                        "ise": {
+                            key: "ise",
+                            title: "Institute for Social Ecology",
+                            description: "",
+                            style: {
+                                backgroundColor: colors.green[600]
+                            }
+                        },
+
+                    }
+                },
+                "housing": {
+                    key: "housing",
+                    title: "Housing",
+                    children: {
+                        "inspirations": {
+                            key: "inspirations",
+                            title: "Inspirations",
+                            style: {
+                                backgroundColor: colors.green[700]
+                            }
+                        },
+                        "sweetwood": {
+                            key: "sweetwood",
+                            title: "I almost bought a house",
+                            style: {
+                                backgroundColor: colors.green[600]
+                            }
+                        },
+                        "intentional community": {
+                            key: "intentional community",
+                            title: "Intentional Community",
+                            style: {
+                                backgroundColor: colors.green[800]
+                            }
+                        },
+                    },
+                    style: {
+                        backgroundColor: colors.green[500]
+                    }
+                }
+            },
             style: {
                 backgroundColor: colors.green[700]
             }
@@ -106,9 +286,34 @@ export const tree: Root = {
             key: "practice",
             title: "practice",
             description: "intentional repetition",
-            children: {},
+            children: {
+                "meditation": {
+                    key: "meditation",
+                    title: "Meditation",
+                    description: "",
+                    style: {
+                        backgroundColor: colors.green[400]
+                    }
+                },
+                "yoga": {
+                    key: "yoga",
+                    title: "Yoga",
+                    description: "",
+                    style: {
+                        backgroundColor: colors.green[600]
+                    }
+                },
+                "spanish": {
+                    key: "spanish",
+                    title: "Spanish",
+                    description: "",
+                    style: {
+                        backgroundColor: colors.green[700]
+                    }
+                }
+            },
             style: {
-                backgroundColor: colors.green[400]
+                backgroundColor: colors.green[500]
             }
         },
     }
