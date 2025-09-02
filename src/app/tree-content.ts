@@ -1,7 +1,5 @@
 import { Root } from "./types";
 import colors from 'tailwindcss/colors';
-import { cityPhlContent } from "./leaf-content";
-import { replicaContent } from "./leaf-content/replica";
 
 export const tree: Root = {
     title: "Eva",
