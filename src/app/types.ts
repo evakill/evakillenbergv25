@@ -17,6 +17,7 @@ export type Branch = {
 export type Leaf = {
     key: string;
     title: string;
+    shortDescription?: string;
     description?: string;
     dates?: string;
     img?: string;

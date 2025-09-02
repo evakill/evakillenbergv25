@@ -8,12 +8,29 @@ export const GridNode = ({ node }: { node: Branch | Leaf }) => {
     const params = useParams();
 
     const handleClick = () => {
-        if (isBranch(node)) {
-            const slug = Array.isArray(params.slug) ? params.slug : params.slug ? [params.slug] : [];
-            const newSlug = [...slug, node.key];
-            router.push("/" + newSlug.join("/"));
-        }
+        const slug = Array.isArray(params.slug) ? params.slug : params.slug ? [params.slug] : [];
+        const newSlug = [...slug, node.key];
+        router.push("/" + newSlug.join("/"));
     };
+
+    const renderBranchNode = (branchNode: Branch) => {
+        return (
+            <div className="flex flex-col grow h-full justify-center items-center gap-3 min-w-0 min-h-0 overflow-auto">
+                <p className="text-4xl font-bold text-white">{branchNode.title}</p>
+                <p className="text-sm text-white opacity-90">{branchNode.description}</p>
+            </div>
+        );
+    };
+
+    const renderLeafNode = (leafNode: Leaf) => (
+        <>
+            <p className="text-lg font-bold text-white">{leafNode.title}</p>
+            {leafNode.dates && <p className="text-sm text-white italic my-1">{leafNode.dates}</p>}
+            <p className="text-sm text-white">{leafNode.shortDescription}</p>
+        </>
+    )
+
+    console.log(node)
 
     return (
         <div
@@ -27,29 +44,7 @@ export const GridNode = ({ node }: { node: Branch | Leaf }) => {
                     <div className="w-full h-full min-w-0 min-h-0 overflow-auto">
                         {node.content}
                     </div>
-                ) : isBranch(node) ? (
-                    <div className="flex flex-col grow h-full justify-center items-center gap-3 min-w-0 min-h-0 overflow-auto">
-                        <p className="text-4xl font-bold text-white">{node.title}</p>
-                        <p className="text-sm text-white opacity-90">{node.description}</p>
-                    </div>
-                ) : (
-                    <>
-                        <p className="text-lg font-bold text-white">{node.title}</p>
-                        {node.dates && <p className="text-sm text-white italic my-1">{node.dates}</p>}
-                        <p className="text-sm text-white">{node.description}</p>
-                        {node.links && node.links.length > 0 && (
-                            <div className="mt-2">
-                                {node.links.map((link, index) => (
-                                    <p key={index} className="text-sm text-white underline break-all mb-1">
-                                        <a href={link} target="_blank" rel="noopener noreferrer">
-                                            {link}
-                                        </a>
-                                    </p>
-                                ))}
-                            </div>
-                        )}
-                    </>
-                )
+                ) : isBranch(node) ? renderBranchNode(node) : renderLeafNode(node)
             }
         </div>
     );
