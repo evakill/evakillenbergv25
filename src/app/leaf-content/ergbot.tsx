@@ -6,7 +6,7 @@ Ergbot was Ben’s final project at an application development bootcamp we atten
 
 Although I stayed mostly on the coding side of Ergbot, I learned a lot from how Ben grew this idea. He rowed at Penn, and saw an opportunity to build something that would be directly applicable to his life, and useful to rowers and rowing teams everywhere. He worked steadily to push forward the product, bringing in people with complimentary skills to help out.
 
-In 2024, Ergbot was acquired by Power Ten Metrics, by which time the app had 8,000+ unique users over 70+ countries.
+In 2024, Ergbot was acquired by Power Ten Metrics, by which time the app had 8,000+ unique users over 70+ countries. It was a great experience to turn a side project into a valuable product, and I'm happy that our work lives on in the world of rowing.
 `;
 
 export const ergbotLeaf: Leaf = {

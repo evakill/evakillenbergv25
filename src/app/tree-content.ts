@@ -29,7 +29,7 @@ export const tree: Root = {
                 "community": {
                     key: "community",
                     title: "community",
-                    description: "IRL",
+                    description: "in-person impact",
                     children: {
                         "btu": leaves.btuLeaf,
                         "fmt": leaves.fmtLeaf,

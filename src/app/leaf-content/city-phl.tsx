@@ -2,9 +2,9 @@ import colors from "tailwindcss/colors";
 import { Leaf } from "../types";
 
 const cityPhlDescription = `
-As an intern at OIT, I worked on releasing Philadelphia campaign finance data to the public through the city's Open Data program. This involved writing an ETL script to clean and transform some legacy datasets to make them more user-friendly and digestible.
+One of the best part of the Urban Studies minor at uPenn was the required coop semester, which I completed my Senior Spring at the City of Philadelphia. As an intern at the city's Office of Innovation and Technology (OIT), I worked on releasing Philadelphia campaign finance data to the public through the city's Open Data program. This involved writing an ETL script to clean and transform some legacy datasets to make them more user-friendly and digestible.
 
-My favorite part of this internship was seeing a public agency from the inside! As I was thinking about my first job out of college, I was weighing options in both public and private sector. My experience reinforced some public sector stereotypes — think Parks and Rec, with coding — but I left with a positive impression of the people I worked with. They had grit, passion, and generosity that makes them excellent coworkers and public servants.
+My favorite part of this internship was seeing a public agency from the inside! As I was thinking about my first job out of college, I was weighing options in both public and private sectors. My experience at OIT reinforced some public sector stereotypes — think Parks and Rec, with coding — but I left with a positive impression of the people I worked with. They had grit, passion, and generosity that makes them excellent coworkers and public servants. Although I decided to join a GovTech startup after I graduated, the door to public service work remains open...
 `;
 
 export const cityPhlLeaf: Leaf = {
