@@ -15,21 +15,21 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             ))}
             {children}
             <Image
-                src="/mushrooms.png"
+                src={`${process.env.NEXT_PUBLIC_ASSET_PREFIX || ""}/mushrooms.png`}
                 alt="Mushrooms"
                 width={150}
                 height={200}
                 className="fixed bottom-32 right-24 z-20"
             />
             <Image
-                src="/mossy-rock.png"
+                src={`${process.env.NEXT_PUBLIC_ASSET_PREFIX || ""}/mossy-rock.png`}
                 alt="Mossy Rock"
                 width={500}
                 height={600}
                 className="fixed -bottom-14 -right-14 z-10"
             />
             <Image
-                src="/monarch.png"
+                src={`${process.env.NEXT_PUBLIC_ASSET_PREFIX || ""}/monarch.png`}
                 alt="Butterfly"
                 width={48}
                 height={48}
