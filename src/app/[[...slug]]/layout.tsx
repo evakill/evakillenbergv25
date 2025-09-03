@@ -36,7 +36,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 className="fixed bottom-44 right-12 z-20"
             />
 
-            {/* <Image src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExMWcwa3RxOTRzMmpjNzRqdmVrdjRoM3FzbmN0b2ppcWd3N3Yxc2EycCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/akSgUX3xhCUUI0Ws8y/giphy.gif" alt="butterfly gif" className="fixed top-8 right-6" height={64} width={64} /> */}
+            {/* Flying butteryfly gif
+            <Image src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExMWcwa3RxOTRzMmpjNzRqdmVrdjRoM3FzbmN0b2ppcWd3N3Yxc2EycCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/akSgUX3xhCUUI0Ws8y/giphy.gif" alt="butterfly gif" className="fixed top-8 right-6" height={64} width={64} /> */}
         </>
     );
 }

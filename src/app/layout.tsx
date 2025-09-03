@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { IM_Fell_Great_Primer, Montserrat } from "next/font/google";
+import { IM_Fell_Great_Primer } from "next/font/google";
 import "./globals.css";
 import { ThumbnailsProvider } from "./ThumbnailsContext";
 
