@@ -185,30 +185,8 @@ export const tree: Root = {
                         backgroundColor: colors.green[500]
                     }
                 },
-                "meditation": {
-                    key: "meditation",
-                    title: "Meditation",
-                    description: "",
-                    style: {
-                        backgroundColor: colors.green[400]
-                    }
-                },
-                "yoga": {
-                    key: "yoga",
-                    title: "Yoga",
-                    description: "",
-                    style: {
-                        backgroundColor: colors.green[600]
-                    }
-                },
-                "spanish": {
-                    key: "spanish",
-                    title: "Spanish",
-                    description: "",
-                    style: {
-                        backgroundColor: colors.green[400]
-                    }
-                }
+                "spanish": leaves.spanishLeaf,
+                "drums": leaves.drumsLeaf
             },
             style: {
                 backgroundColor: colors.green[500]
