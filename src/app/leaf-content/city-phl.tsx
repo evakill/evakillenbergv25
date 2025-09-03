@@ -14,6 +14,6 @@ export const cityPhlLeaf: Leaf = {
     description: cityPhlDescription,
     dates: "February 2021 - May 2021",
     style: {
-        backgroundColor: colors.green[400]
+        backgroundColor: colors.green[600]
     }
 };

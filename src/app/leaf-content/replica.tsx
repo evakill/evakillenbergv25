@@ -1,3 +1,4 @@
+import colors from "tailwindcss/colors"
 import { Leaf } from "../types"
 
 const replicaDescription = `
@@ -17,8 +18,9 @@ export const replicaLeaf: Leaf = {
     dates: "June 2021 - December 2024",
     links: ["https://replicahq.com/"],
     style: {
-        backgroundImage: `url(/replica.png)`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
+        // backgroundImage: `url(/replica.png)`,
+        // backgroundSize: "cover",
+        // backgroundPosition: "center",
+        backgroundColor: colors.green[500]
     }
 }

@@ -69,11 +69,9 @@ export const ThumbnailBorder = React.memo(function ThumbnailBorder({ thumbnail, 
                         d={`M 20 20 H ${size - 20} V ${size - 20} H 20 V 20 Z`}
                     />
                 </defs>
-                {/* Use a group with onClick for client-side navigation */}
                 <g
                     onClick={handleClick}
-                    style={{ cursor: "pointer" }}
-                    className={`hover:opacity-80`}
+                    className="hover:opacity-70 cursor-pointer"
                 >
                     <text fontSize="18" fill="#ad815e" fontWeight="bold" >
                         <textPath href={`#border-square-${pathname}`} startOffset={10}>

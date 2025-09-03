@@ -5,7 +5,6 @@ import { TreeGrid } from "../components/TreeGrid";
 import { tree } from "../tree-content";
 import { useRouter, useParams } from "next/navigation";
 import { findNodeFromParams } from "../utils";
-import { isLeaf, } from "../types";
 
 export default function Home() {
     const router = useRouter();
