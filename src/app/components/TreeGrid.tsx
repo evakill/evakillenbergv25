@@ -25,22 +25,23 @@ export const TreeGrid = ({ treeNode }: { treeNode: TreeNode }) => {
 
     return (
         <div
-            className="flex flex-col items-center justify-center min-h-screen min-w-0 w-full h-full overflow-auto m-auto"
-            style={{ padding: `${thumbnailOffsetPx}px`, maxWidth: `${squareDimensionPx}px`, maxHeight: `${squareDimensionPx}px` }}
+            className="flex flex-col flex-shrink-0 items-center justify-center min-h-0 min-w-0 w-screen h-screen m-auto"
+            style={{ padding: `${thumbnailOffsetPx}px`, maxWidth: `${squareDimensionPx}px`, maxHeight: `${squareDimensionPx}px`, height: `${squareDimensionPx}px` }}
         >
-            <div
-                className="grow grid gap-4  min-h-0 min-w-0 h-full w-full overflow-auto"
-                style={{
-                    gridTemplateColumns: `repeat(${gridDimension}, minmax(0, 1fr))`,
-                    gridTemplateRows: `repeat(${gridDimension}, minmax(0, 1fr))`
-                }}
-            >
-                {isLeaf(treeNode) ? (
-                    <GridLeaf key={treeNode.key} node={treeNode} />
-                ) : (
-                    Object.values(treeNode.children).map(node => <GridNode key={node.key} node={node} />)
-                )}
-            </div>
+            {isLeaf(treeNode) ? (
+                <GridLeaf key={treeNode.key} node={treeNode} />
+            ) : (
+                <div
+                    className="grid gap-4 min-h-0 min-w-0 h-full w-full"
+                    style={{
+                        gridTemplateColumns: `repeat(${gridDimension}, minmax(0, 1fr))`,
+                        gridTemplateRows: `repeat(${gridDimension}, minmax(0, 1fr))`
+                    }}
+                >
+
+                    {Object.values(treeNode.children).map(node => <GridNode key={node.key} node={node} />)}
+                </div>
+            )}
         </div>
     );
 }

@@ -1,8 +1,24 @@
-export const replicaContent = (
-    <>
-        <p className="text-lg font-bold text-white">Replica</p>
-        <p className="text-sm text-white">Worked as a full-stack developer on the application team, building geospatial data tools to empower users with insights into trends within their cities. Key projects included migrating the core data API to a Python microservice, delivering a frontend rewrite of the map interface, and leading the full-stack product development of a travel gate analysis application.
+import { Leaf } from "../types"
 
-            Technologies: Typescript, Python, SQL, Postgres, NodeJS, NextJS, Vercel, Storybook, Jest, Mapbox, Docker, CircleCI, Google Cloud Platform</p>
-    </>
-)
+const replicaDescription = `
+    After graduating in May 2021 with a major in Computer Science and a minor in Urban Studies, I was stoked to join Replica - an urban data startup at the intersection of planning and technology. I was inspired by the mission to empower decision makers with the information needed to make more informed, sustainable, and equitable decisions. 
+            
+    For 3.5 years, I worked as a full-stack developer on the application team, building geospatial data tools from end to end. Key projects included migrating the core data API to a Python microservice, optimizing the map interface in a frontend rewrite, creating a monitoring service to detect bugs and facilitate failsafe iteration, and leading the full-stack product development of a travel gate analysis application. 
+    
+    I decided to leave Replica at the end of 2024.  It was bittersweet, but I feel confident it was the right choice. The company had changed a lot from the one I joined, and my life path was calling me in a different direction. Luckily, I have some amazing friends from my Replica era that I stay in contact with to this day, and I wish the company success!
+    `
+
+
+export const replicaLeaf: Leaf = {
+    key: "replica",
+    title: "Replica",
+    nodeDescription: "This is the urban data startup where I had my first full time SWE job!",
+    description: replicaDescription,
+    dates: "June 2021 - December 2024",
+    links: ["https://replicahq.com/"],
+    style: {
+        backgroundImage: `url(/replica.png)`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+    }
+}

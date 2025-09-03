@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import { Montserrat } from "next/font/google";
+import { IM_Fell_Great_Primer, Montserrat } from "next/font/google";
 import "./globals.css";
 import { ThumbnailsProvider } from "./ThumbnailsContext";
 
-const lora = Montserrat({
+const font = IM_Fell_Great_Primer({
   subsets: ["latin"],
-  weight: ["400", "700"],
+  weight: ["400"],
   display: "swap",
 });
 
@@ -20,7 +20,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={lora.className}>
+    <html lang="en" className={font.className}>
       <body>
         <ThumbnailsProvider>{children}</ThumbnailsProvider>
       </body>

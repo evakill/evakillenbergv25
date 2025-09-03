@@ -26,24 +26,18 @@ export const GridNode = ({ node }: { node: Branch | Leaf }) => {
         <div className="backdrop-blur-xs h-full w-full">
             <p className="text-lg font-bold">{leafNode.title}</p>
             {leafNode.dates && <p className="text-sm italic my-1">{leafNode.dates}</p>}
-            <p className="text-sm">{leafNode.shortDescription}</p>
+            <p className="text-sm">{leafNode.nodeDescription}</p>
         </div>
     )
 
     return (
         <div
             key={node.title}
-            className="hover:scale-101 transition-transform duration-200 cursor-pointer z-10 rounded aspect-square min-w-0 min-h-0 overflow-auto p-3 text-white"
+            className="hover:scale-101 transition-transform duration-200 cursor-pointer z-10 rounded min-w-0 min-h-0 overflow-auto p-3 text-white"
             style={node.style}
             onClick={handleClick}
         >
-            {
-                'content' in node ? (
-                    <div className="w-full h-full min-w-0 min-h-0 overflow-auto">
-                        {node.content}
-                    </div>
-                ) : isBranch(node) ? renderBranchNode(node) : renderLeafNode(node)
-            }
+            {isBranch(node) ? renderBranchNode(node) : renderLeafNode(node)}
         </div>
     );
 };

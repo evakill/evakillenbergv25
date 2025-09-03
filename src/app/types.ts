@@ -17,14 +17,11 @@ export type Branch = {
 export type Leaf = {
     key: string;
     title: string;
-    shortDescription?: string;
-    description?: string;
+    nodeDescription?: string;
+    description?: string | JSX.Element;
     dates?: string;
-    imgPath?: string;
     links?: string[];
     style: React.CSSProperties;
-    content?: JSX.Element;
-    page?: JSX.Element;
 }
 
 export type TreeNode = Root | Branch | Leaf;
