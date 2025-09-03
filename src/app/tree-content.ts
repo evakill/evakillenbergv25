@@ -73,63 +73,8 @@ export const tree: Root = {
             description: "continual growth",
             children: {
                 "nature": leaves.natureLeaf,
-                "politics": {
-                    key: "politics",
-                    title: "Politics",
-                    description: "",
-                    style: {
-                        backgroundColor: colors.green[400]
-                    },
-                    children: {
-                        "utrc": {
-                            key: "utrc",
-                            title: "Utopia Together Reading Collective",
-                            description: "",
-                            style: {
-                                backgroundColor: colors.green[600]
-                            }
-                        },
-                        "ise": {
-                            key: "ise",
-                            title: "Institute for Social Ecology",
-                            description: "",
-                            style: {
-                                backgroundColor: colors.green[600]
-                            }
-                        },
-
-                    }
-                },
-                "housing": {
-                    key: "housing",
-                    title: "Housing",
-                    children: {
-                        "inspirations": {
-                            key: "inspirations",
-                            title: "Inspirations",
-                            style: {
-                                backgroundColor: colors.green[500]
-                            }
-                        },
-                        "sweetwood": {
-                            key: "sweetwood",
-                            title: "I almost bought a house",
-                            style: {
-                                backgroundColor: colors.green[600]
-                            }
-                        },
-                        "intentional community": {
-                            key: "intentional community",
-                            title: "Intentional Community",
-                            style: {
-                                backgroundColor: colors.green[400]
-                            }
-                        },
-                    },
-                    style: {
-                        backgroundColor: colors.green[500]
-                    }
-                }
+                "utopia": leaves.utopiaLeaf,
+                "housing": leaves.housingLeaf
             },
             style: {
                 backgroundColor: colors.green[600]

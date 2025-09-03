@@ -8,7 +8,7 @@ As a 5-person fellowship cohort, we organized a housing campaign focused on prom
 export const fmtLeaf: Leaf = {
     key: "fmt",
     title: "Forward Montana",
-    nodeDescription: "I was a member of a 12-week Housing Fellowship, organizing for pro-housing zoning code reform in Bozeman.",
+    nodeDescription: "Organizing for zoning code reform in Bozeman as a Housing Fellow.",
     description: fmtDescription,
     dates: "April 2025 - June 2025",
     style: {

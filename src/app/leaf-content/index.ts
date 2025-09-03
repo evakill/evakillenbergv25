@@ -4,6 +4,7 @@ export * from "./build";
 export * from "./city-phl";
 export * from "./ergbot";
 export * from "./fmt";
+export * from "./housing"
 export * from "./letters";
 export * from "./nature";
 export * from "./one-army";
@@ -12,3 +13,4 @@ export * from "./shark";
 export * from "./travel";
 export * from "./drums";
 export * from "./spanish";
+export * from "./utopia";

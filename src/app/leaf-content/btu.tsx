@@ -12,7 +12,7 @@ After completing a research training with the Tenant Union Federation, I co-led 
 export const btuLeaf: Leaf = {
     key: "btu",
     title: "Bozeman Tenants United",
-    nodeDescription: "Joined the city-wide tenant union in Bozeman, MT, where tenants and I are fighting for safe, affordable, and dignified housing for all.",
+    nodeDescription: "Fighting for safe, affordable, and dignified housing for all in Bozeman, MT.",
     description: btuDescription,
     dates: "February 2024 - Present",
     style: {
