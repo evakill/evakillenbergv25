@@ -36,12 +36,12 @@ export const tree: Root = {
                         // "n-church-ave": leaves.nChurchAveLeaf
                     },
                     style: {
-                        backgroundColor: colors.green[700]
+                        backgroundColor: colors.green[500]
                     }
                 }
             },
             style: {
-                backgroundColor: colors.green[800]
+                backgroundColor: colors.green[400]
             }
         },
         "play": {
@@ -64,7 +64,7 @@ export const tree: Root = {
                 "activities": leaves.activitiesLeaf
             },
             style: {
-                backgroundColor: colors.green[700]
+                backgroundColor: colors.green[600]
             }
         },
         "study": {
@@ -82,7 +82,7 @@ export const tree: Root = {
                             title: "Natural Building",
                             description: "",
                             style: {
-                                backgroundColor: colors.green[700]
+                                backgroundColor: colors.green[500]
                             }
                         },
                         "gardening": {
@@ -90,7 +90,7 @@ export const tree: Root = {
                             title: "Gardening",
                             description: "",
                             style: {
-                                backgroundColor: colors.green[800]
+                                backgroundColor: colors.green[400]
                             }
                         },
                         "rewilding": {
@@ -142,7 +142,7 @@ export const tree: Root = {
                             key: "inspirations",
                             title: "Inspirations",
                             style: {
-                                backgroundColor: colors.green[700]
+                                backgroundColor: colors.green[500]
                             }
                         },
                         "sweetwood": {
@@ -156,7 +156,7 @@ export const tree: Root = {
                             key: "intentional community",
                             title: "Intentional Community",
                             style: {
-                                backgroundColor: colors.green[800]
+                                backgroundColor: colors.green[400]
                             }
                         },
                     },
@@ -166,7 +166,7 @@ export const tree: Root = {
                 }
             },
             style: {
-                backgroundColor: colors.green[700]
+                backgroundColor: colors.green[600]
             }
         },
         "practice": {
@@ -206,7 +206,7 @@ export const tree: Root = {
                     title: "Spanish",
                     description: "",
                     style: {
-                        backgroundColor: colors.green[700]
+                        backgroundColor: colors.green[400]
                     }
                 }
             },

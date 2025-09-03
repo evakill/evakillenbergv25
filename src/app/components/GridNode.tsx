@@ -24,16 +24,16 @@ export const GridNode = ({ node }: { node: Branch | Leaf }) => {
 
     const renderLeafNode = (leafNode: Leaf) => (
         <div className="backdrop-blur-xs h-full w-full">
-            <p className="text-lg font-bold">{leafNode.title}</p>
-            {leafNode.dates && <p className="text-sm italic my-1">{leafNode.dates}</p>}
-            <p className="text-sm">{leafNode.nodeDescription}</p>
+            <p className="text-2xl font-bold">{leafNode.title}</p>
+            {leafNode.dates && <p className="text-base italic my-1">{leafNode.dates}</p>}
+            <p className="text-base">{leafNode.nodeDescription}</p>
         </div>
     )
 
     return (
         <div
             key={node.title}
-            className="hover:scale-101 transition-transform duration-200 cursor-pointer z-10 rounded min-w-0 min-h-0 overflow-auto p-3 text-white"
+            className="hover:scale-101 transition-transform duration-200 cursor-pointer z-10 rounded min-w-0 min-h-0 overflow-auto p-3 text-green-950"
             style={node.style}
             onClick={handleClick}
         >

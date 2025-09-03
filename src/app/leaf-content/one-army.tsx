@@ -24,7 +24,6 @@ export const oneArmyLeaf: Leaf = {
         "https://github.com/ONEARMY/community-platform"
     ],
     style: {
-        // Add a background if you have one, or use a color
-        backgroundColor: colors.green[800]
+        backgroundColor: colors.green[400]
     }
 }

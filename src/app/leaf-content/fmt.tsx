@@ -12,6 +12,6 @@ export const fmtLeaf: Leaf = {
     description: fmtDescription,
     dates: "April 2025 - June 2025",
     style: {
-        backgroundColor: colors.green[800]
+        backgroundColor: colors.green[400]
     }
 };

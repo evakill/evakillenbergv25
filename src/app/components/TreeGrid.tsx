@@ -25,7 +25,7 @@ export const TreeGrid = ({ treeNode }: { treeNode: TreeNode }) => {
 
     return (
         <div
-            className="flex flex-col flex-shrink-0 items-center justify-center min-h-0 min-w-0 w-screen h-screen m-auto"
+            className="flex flex-col items-center justify-center min-h-0 min-w-0 w-screen h-screen m-auto"
             style={{ padding: `${thumbnailOffsetPx}px`, maxWidth: `${squareDimensionPx}px`, maxHeight: `${squareDimensionPx}px`, height: `${squareDimensionPx}px` }}
         >
             {isLeaf(treeNode) ? (

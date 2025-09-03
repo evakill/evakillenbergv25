@@ -20,6 +20,6 @@ export const ergbotLeaf: Leaf = {
         "https://www.businesswire.com/news/home/20240714422349/en/ErgBot-Acquired-by-Power-Ten-Metrics-in-Agreement-Between-Rowing-Technology-Companies"
     ],
     style: {
-        backgroundColor: colors.green[700]
+        backgroundColor: colors.green[400]
     }
 };
