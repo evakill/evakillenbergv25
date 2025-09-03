@@ -36,6 +36,9 @@ jobs:
         env:
           NODE_ENV: production
       
+      - name: Create CNAME file
+        run: echo "2025.evakillenberg.com" > ./out/CNAME
+      
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
