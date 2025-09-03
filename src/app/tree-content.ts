@@ -72,41 +72,7 @@ export const tree: Root = {
             title: "study",
             description: "continual growth",
             children: {
-                "nature": {
-                    key: "nature",
-                    title: "Natural World",
-                    description: "",
-                    children: {
-                        "natural building": {
-                            key: "natural building",
-                            title: "Natural Building",
-                            description: "",
-                            style: {
-                                backgroundColor: colors.green[500]
-                            }
-                        },
-                        "gardening": {
-                            key: "gardening",
-                            title: "Gardening",
-                            description: "",
-                            style: {
-                                backgroundColor: colors.green[400]
-                            }
-                        },
-                        "rewilding": {
-                            key: "rewilding",
-                            title: "Rewilding 101",
-                            description: "",
-                            style: {
-                                backgroundColor: colors.green[500]
-                            }
-                        }
-                    },
-                    style: {
-                        backgroundColor: colors.green[600]
-                    }
-
-                },
+                "nature": leaves.natureLeaf,
                 "politics": {
                     key: "politics",
                     title: "Politics",

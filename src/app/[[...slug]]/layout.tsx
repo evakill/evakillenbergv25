@@ -25,7 +25,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 src={`${process.env.NEXT_PUBLIC_ASSET_PREFIX || ""}/mossy-rock.png`}
                 alt="Mossy Rock"
                 width={500}
-                height={600}
+                height={400}
                 className="fixed -bottom-14 -right-14 z-10"
             />
             <Image

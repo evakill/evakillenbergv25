@@ -2,7 +2,7 @@
 
 :root {
   --background: #391f0c;
-  --foreground: #ad815e;
+  --foreground: #ba9270;
 }
 
 @theme inline {
@@ -21,8 +21,11 @@ body {
   cursor: url('/monarch-flying.png'), auto;
 }
 
+a {
+  text-decoration: underline;
+}
+
 a:hover {
   cursor: url('/monarch-flying.png'), auto;
   opacity: 0.7;
-  text-decoration: underline;
 }

@@ -15,6 +15,7 @@ This body loves to MOVE! Here are some of the ways I’ve been doing so…
 export const activitiesLeaf: Leaf = {
     key: "activities",
     title: "Activities",
+    nodeDescription: "This body loves to MOVE!",
     description: activitiesDescription,
     style: {
         backgroundColor: colors.green[500]
