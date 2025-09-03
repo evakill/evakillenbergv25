@@ -6,8 +6,8 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true
   },
-  basePath: process.env.NODE_ENV === 'production' ? '/evakillenbergv25' : '',
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/evakillenbergv25/' : '',
+  basePath: '',
+  assetPrefix: '',
 
 }
 
