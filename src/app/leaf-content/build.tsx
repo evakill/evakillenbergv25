@@ -19,8 +19,19 @@ const buildDescription = <>
         ></iframe>
     </div>
 
+    I invited my friends to a "vanwarming" party before I hit the road :)
 
-    One of my first stops on the road was “Gutted”, a festival / production set of a van building TV show.. yes, for real. In reality TV format, three teams, composed of famous vanlife YouTubers, builders, and DIY-ers, competed to do a full conversion in 5 days. (Vanlife was riding a high at this point.) Tickets were sold to come see the process unfold and hang out with other nomads in the desert of Colorado. I was sold! I would end up being a production assistant on the set of Gutted season 2, and was a hopeful participant of Gutted season 3, before the show flopped.
+    <Image
+        src={`${process.env.NEXT_PUBLIC_ASSET_PREFIX || ""}/vanwarming.jpg`}
+        alt="Vanwarming party"
+        width={0}
+        height={0}
+        sizes="100vw"
+        className="w-full h-auto rounded my-3"
+        priority
+    />
+
+    One of my first stops was “Gutted”, a festival / production set of a van building TV show.. yes, for real. In reality TV format, three teams, composed of famous vanlife YouTubers, builders, and DIY-ers, competed to do a full conversion in 5 days. (Vanlife was riding a high at this point.) Tickets were sold to come see the process unfold and hang out with other nomads in the desert of Colorado. I was sold! I would end up being a production assistant on the set of Gutted season 2, and was a hopeful participant of Gutted season 3, before the show flopped.
 
     At Gutted, the “TinyHomeTours” YouTube channel interviewed me and showcased my van - check out the video here:
 

@@ -26,6 +26,7 @@ export const btuLeaf: Leaf = {
     nodeDescription: "Fighting for safe, affordable, and dignified housing for all in Bozeman, MT.",
     description: btuDescription,
     dates: "February 2024 - Present",
+    links: ['https://bzntenantsunited.org/'],
     style: {
         backgroundColor: colors.green[600]
     }

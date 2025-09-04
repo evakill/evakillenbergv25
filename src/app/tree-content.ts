@@ -32,8 +32,7 @@ export const tree: Root = {
                     description: "in-person impact",
                     children: {
                         "btu": leaves.btuLeaf,
-                        "fmt": leaves.fmtLeaf,
-                        // "n-church-ave": leaves.nChurchAveLeaf
+                        "fmt": leaves.fmtLeaf, // TODO
                     },
                     style: {
                         backgroundColor: colors.green[500]
@@ -74,7 +73,7 @@ export const tree: Root = {
             children: {
                 "nature": leaves.natureLeaf,
                 "utopia": leaves.utopiaLeaf,
-                "housing": leaves.housingLeaf
+                "housing": leaves.housingLeaf // TODO
             },
             style: {
                 backgroundColor: colors.green[600]

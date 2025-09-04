@@ -11,6 +11,7 @@ export const fmtLeaf: Leaf = {
     nodeDescription: "Organizing for zoning code reform in Bozeman as a Housing Fellow.",
     description: fmtDescription,
     dates: "April 2025 - June 2025",
+    links: ['https://forwardmontana.org/'],
     style: {
         backgroundColor: colors.green[400]
     }
