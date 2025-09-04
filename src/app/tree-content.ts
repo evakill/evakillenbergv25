@@ -3,7 +3,7 @@ import { Root } from "./types";
 import colors from 'tailwindcss/colors';
 
 export const tree: Root = {
-    title: "Eva",
+    title: "eva",
     key: "",
     children: {
         "work":

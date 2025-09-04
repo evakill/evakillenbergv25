@@ -1,4 +1,4 @@
-import { Root, Thumbnail, TreeNode } from "./types";
+import { Root, Thumbnail, ThumbnailNode, TreeNode } from "./types";
 
 export const findNodeFromParams = (tree: Root, params: { slug?: string[] }): TreeNode | null => {
     let currentNode: TreeNode | null = tree;
@@ -30,3 +30,29 @@ export const getThumbnailsFromParams = (tree: Root, params: { slug?: string[] })
 
     return thumbnailArr;
 };
+
+export const getThumbnailTree = (tree: Root): ThumbnailNode => {
+    const thumbnailNode: ThumbnailNode = {
+        title: tree.title,
+        slug: [],
+        children: []
+    }
+    const buildThumbnailTree = (node: TreeNode, currentThumbnailNode: ThumbnailNode) => {
+        if ('children' in node) {
+            currentThumbnailNode.children = [];
+            for (const childKey in node.children) {
+                const childNode = node.children[childKey];
+                const childThumbnailNode: ThumbnailNode = {
+                    title: childNode.title,
+                    slug: [...currentThumbnailNode.slug, childKey],
+                    children: []
+                };
+                currentThumbnailNode.children.push(childThumbnailNode);
+                buildThumbnailTree(childNode, childThumbnailNode);
+            }
+        }
+    }
+
+    buildThumbnailTree(tree, thumbnailNode);
+    return thumbnailNode
+}

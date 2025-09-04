@@ -38,3 +38,7 @@ export type Thumbnail = {
     title: string;
     slug: string[];
 }
+
+export type ThumbnailNode = Thumbnail & {
+    children?: ThumbnailNode[];
+}
