@@ -5,6 +5,7 @@ import { useThumbnails } from "../ThumbnailsContext";
 import { ThumbnailBorder } from "../components/ThumbnailBorder";
 import Image from "next/image";
 import { TreeNav } from "../components/TreeNav";
+import Link from "next/link"
 
 export default function Layout({ children }: { children: React.ReactNode }) {
     const { thumbnails, squareDimensionPx } = useThumbnails();
@@ -49,7 +50,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             />
             <div className="transition-opacity duration-500" style={{ opacity: showIntro ? 1 : 0 }}>
                 <p className="text-lg fixed bottom-70 right-5 w-[250px] text-right">
-                    Hi there! My name is Eva. This is my portfolio site, created in 2025. Learn more about this site in the <a href="/readme">README</a> and check out some of my other work <a href="https://evakill.github.io">here</a>. Enjoy your wanderings!
+                    Hi there! My name is Eva. This is my portfolio site, created in 2025. Learn more about this site in the <Link href="/readme">README</Link> and check out some of my other work <a href="https://evakill.github.io">here</a>. Enjoy your wanderings!
                 </p>
                 <TreeNav />
             </div>
