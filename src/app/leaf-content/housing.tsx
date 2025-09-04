@@ -1,11 +1,12 @@
 import colors from "tailwindcss/colors";
 import { Leaf } from "../types";
+import Link from "next/link";
 
 const housingDescription = <>Housing feels like a natural and exciting area of focus to me. I’ve been the beneficiary of a stable home since childhood, giving me the latitude to dream and experiment. I’ve been influenced by unconventional living models: attending boarding school as a teenager and living in a van for three years as a young adult. In my travels I’ve been drawn to intentional communities of different shapes and sizes, and feel inspired by collective living and how it pairs with self-governance, climate resilience, and communalism. I see housing as a foundational aspect of our lives: a basic need; a space for care, rest, and connection—and potentially, a political nexus for building power and shaping change. I have a vision for housing that is all of these things and more. <br /><br />
 
     However, in many places and for many people, this foundation is crumbling beneath our feet. Our housing system is broken, for the same reason that so many of our systems are broken: it is a vehicle for profiteering and exploitation. Bozeman is feeling the pain deeply. It is one of many small, desirable cities ensnared by multinational corporate real estate speculation. This has forced undemocratic, unsustainable growth on the urban landscape and natural environment. I feel inspired to bring transformative change to this community by creating alternative options for housing ownership and operation—ones that prevent this extractive cycle and its deleterious effects, and create the opportunity for connective, ecological, and democratic living from the ground up.<br /><br />
 
-    In addition to my community organizing work with <a href="/work/community/fmt">Forward Montana</a> and <a href="/work/community/btu">Bozeman Tenants United</a>, here are some people, projects, movements, ideas, and experiences that have informed my thinking:
+    In addition to my community organizing work with <Link href="/work/community/fmt">Forward Montana</Link> and <Link href="/work/community/btu">Bozeman Tenants United</Link>, here are some people, projects, movements, ideas, and experiences that have informed my thinking:
 
     <ul className="list-disc list-inside ml-4 my-2 ">
         <li>

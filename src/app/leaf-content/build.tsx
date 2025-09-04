@@ -19,7 +19,7 @@ const buildDescription = <>
         ></iframe>
     </div>
 
-    I invited my friends to a "vanwarming" party before I hit the road :)
+    I invited my friends to a &quot;vanwarming&quot; party before I hit the road :)
 
     <Image
         src={`${process.env.NEXT_PUBLIC_ASSET_PREFIX || ""}/vanwarming.jpg`}
