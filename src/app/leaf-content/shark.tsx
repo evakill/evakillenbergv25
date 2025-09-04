@@ -12,6 +12,7 @@ export const sharkLeaf: Leaf = {
     title: "Shark Walks",
     nodeDescription: "It’s kinda a long story…",
     description: sharkDescription,
+    dates: "March 2024",
     links: ['https://shark-walks.notion.site/Shark-Walks-8bec521df460476aba47410d017119d1?pvs=74'],
     style: {
         backgroundColor: colors.green[500]

@@ -8,7 +8,7 @@ const housingDescription = <>Housing feels like a natural and exciting area of f
 
     In addition to my community organizing work with <Link href="/work/community/fmt">Forward Montana</Link> and <Link href="/work/community/btu">Bozeman Tenants United</Link>, here are some people, projects, movements, ideas, and experiences that have informed my thinking:
 
-    <ul className="list-disc list-inside ml-4 my-2 ">
+    <ul className="list-disc list-inside ml-4 my-2">
         <li>
             <a href="https://culdesac.com/">Culdesac</a>: A planned car-free neighborhood; building cities for people, not cars
         </li>
@@ -38,7 +38,6 @@ export const housingLeaf: Leaf = {
     title: "Housing",
     nodeDescription: "Designing better containers for our lives",
     description: housingDescription,
-    dates: "April 2025 - June 2025",
     style: {
         backgroundColor: colors.green[400]
     }
