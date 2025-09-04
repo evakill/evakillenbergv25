@@ -10,25 +10,25 @@ const housingDescription = <>Housing feels like a natural and exciting area of f
 
     <ul className="list-disc list-inside ml-4 my-2 ">
         <li>
-            <a href="https://culdesac.com/">Culdesac</a>: a planned car-free neighborhood; building cities for people, not cars
+            <a href="https://culdesac.com/">Culdesac</a>: A planned car-free neighborhood; building cities for people, not cars
         </li>
         <li>
-            <a href="https://www.ic.org/foundation-for-intentional-community/">Intentional Communities Movement</a>: promoting models of living based on shared resources, co-governance, and connection. I attended the Intentional Communities Conference at Twin Oaks in 2024 and engaged in the Sirius Community Internship program in 2025.
+            <a href="https://www.ic.org/foundation-for-intentional-community/">Intentional Communities Movement</a>: Promoting models of living based on shared resources, co-governance, and connection. I attended the Intentional Communities Conference at Twin Oaks in 2024 and engaged in the Sirius Community Internship program in 2025.
         </li>
         <li>
-            <a href="https://www.strongtowns.org/">Strong Towns</a>: Proposing a model of development in U.S. cities based on iterative, community-driven, locally-financed development.
+            <a href="https://www.strongtowns.org/">Strong Towns</a>: Proposing a model of development in U.S. cities based on iterative, community-driven, sustainably-financed development.
         </li>
         <li>
-            <a href="https://climateandcommunity.org/research/vienna-green-social-housing/">Vienna Green Social Housing</a>: A model of municipally-owned, affordable, and ecologically-designed housing in Vienna, Austria.
+            <a href="https://climateandcommunity.org/research/vienna-green-social-housing/">Vienna Green Social Housing</a>: A model of municipally-owned, affordable, and ecological housing model in Vienna, Austria.
         </li>
         <li>
-            <a href="https://www.arcosanti.org/">Arcosanti</a>: an experiment in architecture, ecology, and urbanism in the Arizona desert. I had the opportunity to tour in 2022.
+            Almost Buying a House: In 2023, I went under contract on a little cabin in the woods in Putney, Vermont. The deal fell through after inspection, but the process forced me to reckon with the opportunities and risks of homeownership.
+        </li>
+        <li>
+            <a href="https://www.arcosanti.org/">Arcosanti</a>: An experiment in architecture, ecology, and urbanism in the Arizona desert. I visited in 2022.
         </li>
         <li>
             Frank Lloyd Wright: Iconic American architect, famous for integrating natural themes into designs. I toured three of his homes on my most recent drive through the midwest.
-        </li>
-        <li>
-            Almost Buying a House: In 2023, I went under contract on a little cabin in the woods in Putney Vermont. The deal ended up falling through after inspection, but forced me to reckon with the opportunities and risks of homeownership.
         </li>
     </ul>
 </>;

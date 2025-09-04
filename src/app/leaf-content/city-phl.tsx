@@ -13,6 +13,7 @@ export const cityPhlLeaf: Leaf = {
     nodeDescription: "As part of my Urban Studies minor, I spent my Senior spring at uPenn working as an intern at the City of Philadelphia Office of Innovation and Technology.",
     description: cityPhlDescription,
     dates: "February 2021 - May 2021",
+    links: ["https://experience.arcgis.com/experience/7444617509954375adc64e7355b98581/"],
     style: {
         backgroundColor: colors.green[600]
     }

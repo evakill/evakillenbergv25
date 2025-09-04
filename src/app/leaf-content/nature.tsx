@@ -2,7 +2,7 @@ import colors from "tailwindcss/colors";
 import { Leaf } from "../types";
 
 const natureDescription = `
-It’s been a joy to be a student of the outdoors. My travels in my tiny van led me to be outside far more than I ever have been in my life—spending weekends hiking, swimming, camping, and marveling over the natural beauty of this country. 
+I love being a student of the outdoors. My travels in my tiny van led me to be outside far more than I ever have been in my life—spending weekends hiking, swimming, camping, and marveling over the natural beauty of this country. 
 
 I’ve also gravitated to more integrated opportunities to learn about the natural world through the WWOOF program. I have grown and harvested olives at a 40-acre olive grove in Northern California, and tended to goats, chickens, rabbits, tomatoes, and cucumbers on an urban farm in Portland, Oregon. In western Massachusetts, I worked in a community garden that feeds 30 people, watching the patterns of dozens of vegetables and herbs and the insects and creatures they attract.
 
