@@ -3,21 +3,25 @@ import { Leaf } from "../types";
 import Image from "next/image"
 
 const filenames = [
-    'van-drone.MP4',
+    'van-drone.mov',
     'aspens.jpeg',
     'catalina.JPG',
+    'moab.jpeg',
+    'sleep.jpg',
     'yellowstone.JPG',
     'sedona-hike.jpg',
+    'pbj.jpeg',
     'bryce.jpeg',
     'canyon.jpeg',
     'fest.jpeg',
-    'pbj.jpeg',
-    'beach-sleep.jpeg',
+    'camp.jpeg',
     'katahdin.jpeg',
     'maine.jpeg',
     'baja-jam.JPG',
     'baja.MOV',
+    'rio.jpeg',
 ]
+
 
 const travelDescription = <>
     Although sometimes I regret not documenting my travels more formally on a blog or Instagram,
