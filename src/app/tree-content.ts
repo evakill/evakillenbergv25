@@ -73,7 +73,7 @@ export const tree: Root = {
             children: {
                 "nature": leaves.natureLeaf,
                 "utopia": leaves.utopiaLeaf,
-                "housing": leaves.housingLeaf // TODO
+                "housing": leaves.housingLeaf
             },
             style: {
                 backgroundColor: colors.green[600]
