@@ -86,6 +86,7 @@ export const buildLeaf: Leaf = {
     title: "Build",
     nodeDescription: "Creating my dream tiny home (on wheels)",
     description: buildDescription,
+    dates: "June 2021 - August 2021",
     style: {
         backgroundColor: colors.green[400]
     }
