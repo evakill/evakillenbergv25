@@ -26,32 +26,26 @@ export default function ReadmePage() {
                 height={200}
                 className="rounded my-4"
             />
-            <p className="mb-3">
-                After leaving my job as a Software Engineer at the end of 2024, I took a break from coding. Programming had been a consistent part of my life since I started my computer science degree in 2017, then learned how to build applications in 2018. I made side projects, found a way to integrate coding into my non-CS classes, worked as a contracted developer, and even did a COVID hackathon from quarantine. When I graduated, I jumped into the tech workforce and worked at a startup for 3.5 years, contributing to an open-source repository on the side. Then, in 2025, I did an experiment: if I stopped coding, what would step in to fill the space?
-            </p>
-            <p className="mb-3">
-                Before I quit my job, I wondered if I would get bored. The answer is a definitive, no. I filled the space (and then some) with learning new skills and studying new ideas, becoming involved in my community, play, care, and deepening relationships. At times, I felt unmoored without the routine of a full-time job and the psychological security it granted me. But this discomfort forced me to grapple with my values, what is important for me to spend time on, and why. The months were full of growth and inspiration.
-            </p>
-            <p className="mb-3">
-                In July, I picked up a programming project for my tenant union, pulling some open data files into a database and running SQL queries. After the project, I realized those were the first lines of code I had written in 6 months. I also realized the project had energized me, reawakening the technical side of my brain in a way that felt really good.
-            </p>
-            <p className="mb-3">
-                In December of 2020, as I was finishing college and applying for jobs, I created a personal website. I LOVE this site, and all the care and creativity I put into it. It struck me that the site is now 5 years old, and lots of life has happened since it was developed. I decided to update my web presence, not by changing or adding to the original site (I like the idea of an archive), but by making a new one.
-            </p>
-            <p className="mb-3">
-                After shaking off the rust, and deciding on a fun theme for the side, I was off to the races. I am happy to share my two-thousand-twenty-five website to the world, and to be returning to the creative technologist who is back from a well-deserved and -enjoyed break!
-            </p>
+            {`After leaving my job as a Software Engineer at the end of 2024, I took a break. Programming had been a consistent part of my life since I started my computer science degree in 2017, then learned how to build applications in 2018. While I was in college, I worked on side projects, integrated coding into my non-CS classes, worked as a contracted developer, and even did a COVID hackathon from quarantine. When I graduated, I jumped into the tech workforce as a software engineer at a startup for 3.5 years, and contributing to an open-source repository on the side. Then, in 2025, I decided I wanted a change. If I stopped coding, what would fill the space?
+
+            I entered 2025 with a clean slate. At times, I felt unmoored without the routine of a full-time job and the psychological security it granted me. But this discomfort forced me to create meaningful work and activities for myself. I occupied my time with learning new skills and studying new ideas, becoming involved in my community, playing outside, cooking good food, and deepening my relationships. This chapter felt challenging, exciting, and nourishing.
+
+            In July, I picked up a programming project for my tenant union, pulling some open data files into a database and running SQL queries. After the project, I realized those were the first lines of code I had written in 6 months. I also realized the project had energized me, reawakening the technical side of my brain in a way that felt really good.
+
+            I had created a personal website in December of 2020, as I was finishing college and applying for jobs. I LOVE this site, and all the care and creativity I put into it. It struck me that the site is now 5 years old, and lots of life has happened since it was developed. I decided to update my web presence, not by changing or adding to the original site (I like the idea of an archive), but by making a new one, as a way to stick my toes back into the software development world.
+
+            After shaking off the rust, and deciding on a fun theme for the side, I was off to the races. I am happy to share my freshly-deployed 2025 website to the world, and to be reconnecting to the creative technologist side of myself, who is back from a well-deserved and -enjoyed break!`}
 
             <h2 className="text-2xl font-bold mt-6">About the site</h2>
-            <p className="mb-3">
-                The theme for this site is…. “tree”! Many of my adventures in the last six months have been firmly rooted in the physical world. Trees feel symbolic of this, while harkening back to a classic data structure that programmers know and love. (I was itching for some recursion, I guess.)
-            </p>
-            <p className="mb-3">
-                To move through the site, you will follow thematic branches to leaves of content, describing an important facet of my last 5 years. The leaves contain anecdotes, pictures, links, and ideas—like a resume, but more comprehensive, vulnerable, and human. I enjoyed the reflective act of putting together the content for this site, walking back through my last 5 years and picking out the memories and experiences that feel the most salient. Hopefully it paints a good picture of this era of Eva.
-            </p>
-            <p className="mb-3">
-                I wanted the site to be visually playful and interesting, while reinforcing the tree theme. As I iterated on the design, it became more and more tree-like, using a color palette of browns and greens, a font that reminds me of etched letters, fun forest imagery, and thumbnails that looked like tree rings on a stump. I really love how it turned out.
-            </p>
+
+            {`The theme for this site is…. “tree”! Many of my adventures in the last six months have been firmly rooted in the physical world. Trees feel symbolic of this, while harkening back to a classic data structure that programmers know and love. (And I was itching for some recursion, I guess.)
+
+            To move through the site, you will follow thematic "branches" to "leaves" of content, each describing an important element of my last 5 years: things I've worked on, organizations I've been involved with, things I've learned, ways I have grown. The leaves contain anecdotes, pictures, links, and ideas. It's like a resume, but more holistic and human.
+
+            I wanted the site to be visually playful and interesting, while reinforcing the tree theme. As I iterated on the design, it became more and more tree-like, using a color palette of browns and greens, a font that reminds me of etched letters, fun forest imagery, and thumbnails that looked like tree rings on a stump.
+
+            I enjoyed the reflective act of putting together the content for this site, and the visual and technological symbolism. I really love how it turned out. I hope you enjoy exploring this era of Eva.`}
+
             <Image
                 src="/site-preview.png"
                 alt="Site Preview"
@@ -61,13 +55,12 @@ export default function ReadmePage() {
             />
 
             <h2 className="text-2xl font-bold mt-6">Into the weeds…</h2>
-            <p className="mb-3">
-                For those of you who move through technological spaces:
-            </p>
-            <p className="mb-3">
-                This site was built with Typescript, NextJS (with Static Generation), Tailwind; and deployed with Github Pages.
-            </p>
-            <p className="mb-3">Some special features:</p>
+
+            {`For those of you who move through technological spaces:
+
+            This site was built with Typescript, NextJS (with Static Generation), Tailwind; and deployed with Github Pages.
+
+            Some special features:`}
             <ul className="list-disc list-inside ml-4">
                 <li className="mt-2">
                     The content for my site is stored as an object in <code>tree-content</code>. The <code>generateStaticParams</code> recursively traverses this tree to create the statically generated pages based on the content. A catch-all page in <code>[[...slug]]/page.tsx</code> renders the requested tree node from the URL.  This allows me the flexibility to add new branches and leaves, or modify the tree structure, with no need to change any boilerplate.
@@ -84,7 +77,7 @@ export default function ReadmePage() {
             </ul>
 
             <h2 className="text-2xl font-bold mt-6">Bye!</h2>
-            <p className="mb-3">Check back in 5 years for the next iteration :)</p>
+            Check back in 5 years for the next iteration :)
         </div>
     );
 }
