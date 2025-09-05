@@ -39,7 +39,7 @@ const natureDescription = <>
     Taking a course called “Rewilding 101” with Peter Michael Bauer put more language and context to my natural studies. Over our 300,000 year evolution as a species, our bodies have lived in the modern world for only a tiny fraction of time. I believe being in relationship with nature connects us to our biological and cultural history, and teaches us important lessons about change, harmony, reciprocity, and the cyclical nature of life.
 
     <br /><br />
-    I'm also inspired by the permaculture design principles, particularly “design from pattern to details”, “work with nature not against”, and “value the marginal.”
+    I’m also inspired by the permaculture design principles, particularly “design from pattern to details”, “work with nature not against”, and “value the marginal.”
 
 </>
 
