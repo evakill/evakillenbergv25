@@ -3,7 +3,7 @@ import { Leaf } from "../types"
 import Image from "next/image"
 
 const replicaDescription = <>
-    After graduating in May 2021 with a major in Computer Science and a minor in Urban Studies, I was stoked to join Replica - an urban data startup at the intersection of planning and technology.I was inspired by the mission to empower decision makers with the information needed to make more informed, sustainable, and equitable decisions. <br /><br />
+    After graduating in May 2021 with a major in Computer Science and a minor in Urban Studies, I was stoked to join Replica - an urban data startup at the intersection of planning and technology. I was inspired by the mission to empower decision makers with the information needed to make more informed, sustainable, and equitable decisions. <br /><br />
 
     For 3.5 years, I worked as a full - stack developer on the application team, building geospatial data tools from end to end.Key projects included migrating the core data API to a Python microservice, optimizing the map interface in a frontend rewrite, creating a monitoring service to detect bugs and facilitate failsafe iteration, and leading the full - stack product development of a travel gate analysis application.
     <Image
