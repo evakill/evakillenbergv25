@@ -2,8 +2,6 @@ import colors from "tailwindcss/colors";
 import { Leaf } from "../types";
 
 const drumsDescription = `
-Decided to learn the loudest, most impractical instrument.
-
 When my older brother was in high school, he formed a garage band with his friend group. He was the drummer, and so band practices were typically held at my house. I was also often asked to video tape their concerts, which I did with careful attention. Seeing him make music with his friends was inspiring. I developed a fascination with the big, resonant sounds and groovy rhythms of the drums.
 
 In my adulthood, I have looked up to my musician friends with awe and a tinge of envy. I want to be able to make music for and with people! And when I imagine future Eva jamming out, she's on the drums. I expressed this dream to my brother, and for Christmas he gave me his old drum practice pad and offered to pay for my first drum lesson. Since I started lessons in February of 2025, I’ve been hooked.

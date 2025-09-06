@@ -31,9 +31,9 @@ const buildDescription = <>
         priority
     />
 
-    One of my first stops was “Gutted”, a festival / production set of a van building TV show.. yes, for real. In reality TV format, three teams, composed of famous vanlife YouTubers, builders, and DIY-ers, competed to do a full conversion in 5 days. (Vanlife was riding a high at this point.) Tickets were sold to come see the process unfold and hang out with other nomads in the desert of Colorado. I was sold! I would end up being a production assistant on the set of Gutted season 2, and was a hopeful participant of Gutted season 3, before the show flopped.
+    One of my first stops was Gutted, a festival / production set of a van building TV show.. yes, for real. In reality TV format, three teams, composed of famous vanlife YouTubers, builders, and DIY-ers, competed to build out the best van in 5 days. Tickets were sold to come see the process unfold and hang out with other nomads in the desert of Colorado. I was sold! I would end up being a production assistant on the set of Gutted season 2, and was a hopeful competitor for Gutted season 3. Unfortunately, the show didn’t make it to season 3. Oh well. <br /> <br />
 
-    At Gutted, the “TinyHomeTours” YouTube channel interviewed me and showcased my van - check out the video here:
+    At Gutted in 2021, the TinyHomeTours YouTube channel interviewed me and showcased my van - check out the video here:
 
     <div className="my-4 flex justify-center">
         <iframe
@@ -48,9 +48,7 @@ const buildDescription = <>
         ></iframe>
     </div>
 
-    In January of 2023, I decided to upgrade and remodel the “kitchen” half of my van. For a month and a half, I hung out in Tucson and joined the local makerspace. This round of building, I had access to a plethora of tools and equipment to create my vision. I also joined a nearby pottery studio with the ambition to create a clay sink for my updated design. This process taught me a lot about building and the importance of community creative spaces! Here are some photos of the remodel:
-
-    I love my little home, and while I no longer live in it full time, I am deeply attached to this container that has held my creativity and explorations, and love having a adventure-mobile for wherever life takes me.
+    In January of 2023, I decided to upgrade and remodel the kitchen side of my van. For a month and a half, I parked in Tucson and joined the local makerspace. This round of building, I had access to a plethora of tools and equipment to create my vision. I also joined a nearby pottery studio with the ambition to create a clay sink for my updated design. This process taught me a lot about building and the importance of community creative spaces! Here are some photos of the remodel:
     <Image
         src={`${process.env.NEXT_PUBLIC_ASSET_PREFIX || ""}/van.jpg`}
         alt="Van from the back"
@@ -78,6 +76,7 @@ const buildDescription = <>
         className="w-full h-auto rounded my-3"
         priority
     />
+    While I no longer live in it full time, I am deeply attached to this vehicle/house that has held my creativity and explorations, and love having a adventure-mobile for wherever life takes me.
 
 </>;
 
